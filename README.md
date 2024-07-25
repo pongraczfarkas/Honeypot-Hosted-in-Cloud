@@ -3,28 +3,37 @@
 ## Description
 This guide details my process of setting up a T-Pot Honeypot server on Azure Cloud. The primary objective of this project was to gain hands-on experience in cybersecurity by deploying and managing a honeypot environment. By implementing T-Pot, I aimed to monitor and analyze potential attacks, enhancing my understanding of threat detection and response. This project emphasizes two crucial aspects of cybersecurity: threat detection and incident response. Using Azure Cloud, I will create and configure a virtual machine to host the T-Pot Honeypot server, track incoming threats, analyze the captured data, and document the findings to improve security measures.
 
-## Resources used
+## Resources and links
 
-- Azure Cloud: https://azure.microsoft.com/en-us/free/
-- T-Pot: https://github.com/telekom-security/tpotce
+- Azure Cloud: [Register](https://azure.microsoft.com/en-us/free/)
+- PuTTY: [Download](https://www.chiark.greenend.org.uk/~sgtatham/putty/latest.html)
+- T-Pot: [Download](https://github.com/telekom-security/tpotce)
 
+## Walkthrough
+First step after creating an Azure account is to create a Virtual Machine within the platform
 ![image](https://github.com/user-attachments/assets/0d7df1e2-1253-4af2-b4ce-427b33d090e9)
 ![image](https://github.com/user-attachments/assets/b1fbcb26-a143-4005-9cc9-e41a290368c9)
 
-
+I need to create a new resource group, which is going to serve as a logical container. Then I will set up the closest region to me, give a name to the VM and purposefully choose Debian 12 x64 from the available images because it was recommended in the documentation.
 ![image](https://github.com/user-attachments/assets/f77bfd56-b077-4628-bb19-43438f1f78b2)
+There are still more to do on this window: I will modify the default setting on the size of the VM and I will choose the option with 16GB of RAM. Then I will set up a user account to be able to log into my VM with the help of SSH immediately after it gets provisioned. I will also save the password to my password manager. As this window is done, I will click Next.
 ![image](https://github.com/user-attachments/assets/31404f0b-b968-4054-8424-21f0cb535437)
 
+Here I will add a new disk, which will be (following the recommendation again) 256 GB. 
 ![image](https://github.com/user-attachments/assets/db34a64a-07cb-474a-954b-222c33087761)
 ![image](https://github.com/user-attachments/assets/d535ed4c-138e-41cd-a26a-632c5cecea7c)
 
+I will then give names to the VM's virtual network and will give IP address to it.
 ![image](https://github.com/user-attachments/assets/5a08c056-92be-47f9-b4aa-cab64f269f0a)
+The next step is also very important. I will make an inbound rule which will open all the ports. Although this goes completely against the best practices, I want as much data to be collected as possible in a short amount of time.
 ![image](https://github.com/user-attachments/assets/2d2e74aa-d8ba-4a72-acea-187e54df285d)
 ![image](https://github.com/user-attachments/assets/70e80a44-4f4b-4d6f-8d92-0a25f46fa4d7)
-
+Now that I have set up everything, it is time to SSH into my machine via PuttY.
 ![image](https://github.com/user-attachments/assets/788f80e5-ec4f-4918-a8ff-7e3ea002ec0a)
+Then I ran `sudo apt update` to update the package lists of my freshly deployed Debian. Do not forget to do these steps with every freshly installed operating system. It could be possible that there are updates to them and their packages.
 ![image](https://github.com/user-attachments/assets/96452925-9141-482c-bbd3-0fbeafb10437)
 ![image](https://github.com/user-attachments/assets/bb9d93fb-88a9-451a-93f8-3a1bc0c97695)
+
 ![image](https://github.com/user-attachments/assets/916dd84a-5a04-4a35-8893-181a0a8263de)
 ![image](https://github.com/user-attachments/assets/8eb69340-5649-4cc2-a500-f18793fd5b4d)
 ![image](https://github.com/user-attachments/assets/caa34411-a4e8-4e88-90c7-ea62b1a74bdd)
