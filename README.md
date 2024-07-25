@@ -1,5 +1,13 @@
 # Honeypot Hosted in Cloud
 
+## Description
+This guide details my process of setting up a T-Pot Honeypot server on Azure Cloud. The primary objective of this project was to gain hands-on experience in cybersecurity by deploying and managing a honeypot environment. By implementing T-Pot, I aimed to monitor and analyze potential attacks, enhancing my understanding of threat detection and response. This project emphasizes two crucial aspects of cybersecurity: threat detection and incident response. Using Azure Cloud, I will create and configure a virtual machine to host the T-Pot Honeypot server, track incoming threats, analyze the captured data, and document the findings to improve security measures.
+
+## Resources used
+
+- Azure Cloud: https://azure.microsoft.com/en-us/free/
+- T-Pot: https://github.com/telekom-security/tpotce
+
 ![image](https://github.com/user-attachments/assets/0d7df1e2-1253-4af2-b4ce-427b33d090e9)
 ![image](https://github.com/user-attachments/assets/b1fbcb26-a143-4005-9cc9-e41a290368c9)
 
