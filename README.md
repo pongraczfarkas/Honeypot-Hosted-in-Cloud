@@ -76,7 +76,7 @@ I install git here so I could clone the T-Pot repository.
     <img src="https://github.com/user-attachments/assets/8eb69340-5649-4cc2-a500-f18793fd5b4d" alt="image"/>
 </div>
 
-After I finished the download, I went to immediately install T-Pot on my system with the command `.install sudo apt upgrade -y. I will add a bunch of important stuff to the application, like what my username will be on the web login, what mode do I want to install T-Pot in etc.
+After I finished the download, I went to immediately installed T-Pot on my system with the command `./install.sh`. I will add a bunch of important stuff to the application, like what my username will be on the web login, what mode do I want to install T-Pot in etc.
 
 <div align="center">
     <img src="https://github.com/user-attachments/assets/1719552b-7c42-42d5-956f-5020d838cf8e" alt="image"/>
