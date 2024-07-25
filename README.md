@@ -60,7 +60,7 @@ Now that I have set up everything, it is time to SSH into my machine via PuttY.
 Then I ran `sudo apt update` to update the package lists of my freshly deployed Debian. Do not forget to do these steps with every freshly installed operating system. It could be possible that there are updates to them and their packages.
 
 <div align="center">
-    <img src="https://github.com/user-attachments/assets/96452925-9141-482c" alt="image"/>
+    <img src="https://github.com/user-attachments/assets/96452925-9141-482c-bbd3-0fbeafb10437" alt="image"/>
 </div>
 
 Now that we have an updated package list, let's download the updates `sudo apt upgrade -y`
