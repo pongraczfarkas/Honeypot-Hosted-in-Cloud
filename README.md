@@ -31,8 +31,10 @@ The next step is also very important. I will make an inbound rule which will ope
 Now that I have set up everything, it is time to SSH into my machine via PuttY.
 ![image](https://github.com/user-attachments/assets/788f80e5-ec4f-4918-a8ff-7e3ea002ec0a)
 Then I ran `sudo apt update` to update the package lists of my freshly deployed Debian. Do not forget to do these steps with every freshly installed operating system. It could be possible that there are updates to them and their packages.
-![image](https://github.com/user-attachments/assets/96452925-9141-482c-bbd3-0fbeafb10437)
+![image](https://github.com/user-attachments/assets/96452925-9141-482c)`
+Now that we have an updated package list, let's download the updates `sudo apt upgrade`
 ![image](https://github.com/user-attachments/assets/bb9d93fb-88a9-451a-93f8-3a1bc0c97695)
+
 
 ![image](https://github.com/user-attachments/assets/916dd84a-5a04-4a35-8893-181a0a8263de)
 ![image](https://github.com/user-attachments/assets/8eb69340-5649-4cc2-a500-f18793fd5b4d)
